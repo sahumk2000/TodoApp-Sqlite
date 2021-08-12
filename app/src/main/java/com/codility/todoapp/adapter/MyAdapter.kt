@@ -12,14 +12,14 @@ import kotlinx.android.synthetic.main.list_item.view.*
 /**
  * Created by Govind on 2/16/2018.
  */
-class MyAdapter(private val todoList: ArrayList<Todo>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+class MyAdapter(private val todoList: ArrayList<Todo>) : RecyclerView.Adapter<MyAdapter.ViewHolder2>() {
     private var listener: OnClickListener? = null
 
     fun setListener(clickListener: OnClickListener) {
         this.listener = clickListener
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder2, position: Int) {
         val todo: Todo = todoList[position]
         holder.bindItems(todo)
 
@@ -40,11 +40,11 @@ class MyAdapter(private val todoList: ArrayList<Todo>) : RecyclerView.Adapter<My
         return todoList.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MyAdapter.ViewHolder {
-        return ViewHolder(LayoutInflater.from(parent!!.context).inflate(R.layout.list_item, parent, false))
+    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MyAdapter.ViewHolder2 {
+        return ViewHolder2(LayoutInflater.from(parent!!.context).inflate(R.layout.list_item, parent, false))
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder2(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindItems(todo: Todo) {
             val tvTitle = itemView.findViewById<TextView>(R.id.tvTitle)
             val tvDesc = itemView.findViewById<TextView>(R.id.tvDesc)

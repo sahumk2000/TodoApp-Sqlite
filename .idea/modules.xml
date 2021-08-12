@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TODOApp.iml" filepath="$PROJECT_DIR$/TODOApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TodoApp-Sqlite.iml" filepath="$PROJECT_DIR$/.idea/modules/TodoApp-Sqlite.iml" group="TodoApp-Sqlite" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TodoApp-Sqlite-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TodoApp-Sqlite-app.iml" group="TodoApp-Sqlite/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -29,7 +29,20 @@
         android:layout_toLeftOf="@+id/btDelete"
         android:layout_toStartOf="@+id/btDelete"
         android:maxLines="3"
-        android:text="Siliguri, Darjeeling"
+        android:text="Desc...."
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_toLeftOf="@+id/btDelete"
+        android:layout_toStartOf="@+id/btDelete"
+        android:maxLines="3"
+        android:text="Tag..."
         android:textColor="@color/white"
         android:textSize="14sp"
         tools:ignore="HardcodedText" />
@@ -38,7 +51,7 @@
         android:id="@+id/tvTimestamp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvDesc"
+        android:layout_below="@+id/tvTag"
         android:layout_toLeftOf="@+id/btDelete"
         android:layout_toStartOf="@+id/btDelete"
         android:text="DateTime"
